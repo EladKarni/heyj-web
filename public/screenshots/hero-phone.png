@@ -1,0 +1,7 @@
+<svg width="300" height="600" viewBox="0 0 300 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="600" rx="30" fill="#2B1F1A"/>
+  <rect x="20" y="60" width="260" height="480" rx="10" fill="#3D2F27"/>
+  <text x="150" y="300" text-anchor="middle" fill="#FF9580" font-size="20" font-family="Arial">HeyJ</text>
+  <text x="150" y="330" text-anchor="middle" fill="#FFB6A3" font-size="14" font-family="Arial">Phone Mockup</text>
+  <text x="150" y="360" text-anchor="middle" fill="#FFE5DC" font-size="12" font-family="Arial">Replace with actual screenshot</text>
+</svg>

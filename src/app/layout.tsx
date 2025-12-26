@@ -10,25 +10,33 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "YK Innovations | Mechanical Engineering & Rapid Prototyping",
-    template: "%s | YK Innovations",
+    default: "HeyJ | Fast Voice Messages. Zero Clutter.",
+    template: "%s | HeyJ",
   },
-  description: "Expert mechanical engineering and rapid prototyping services for businesses. We transform product concepts into functional prototypes with CAD design, 3D printing, CNC machining, and DFM analysis.",
-  keywords: ["mechanical engineering", "rapid prototyping", "CAD design", "3D printing", "CNC machining", "product development", "DFM analysis", "prototyping services"],
-  authors: [{ name: "YK Innovations" }],
-  creator: "YK Innovations",
+  description: "HeyJ is voice-first messaging. Press and hold to talk — let go to send. Works on Web, iOS, and Android, with no message length limits.",
+  keywords: ["voice messaging", "voice notes", "voice chat", "messaging app", "voice-first", "instant messaging", "communication app"],
+  authors: [{ name: "HeyJ" }],
+  creator: "HeyJ",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/HeyJ-Logo.svg" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ykinnovations.com/",
-    title: "YK Innovations | Mechanical Engineering & Rapid Prototyping",
-    description: "Expert mechanical engineering and rapid prototyping services for businesses. We transform product concepts into functional prototypes.",
-    siteName: "YK Innovations",
+    url: "https://heyj.app/",
+    title: "HeyJ | Fast Voice Messages. Zero Clutter.",
+    description: "HeyJ is voice-first messaging. Press and hold to talk — let go to send. Works on Web, iOS, and Android, with no message length limits.",
+    siteName: "HeyJ",
   },
   twitter: {
     card: "summary_large_image",
-    title: "YK Innovations | Mechanical Engineering & Rapid Prototyping",
-    description: "Expert mechanical engineering and rapid prototyping services for businesses. We transform product concepts into functional prototypes.",
+    title: "HeyJ | Fast Voice Messages. Zero Clutter.",
+    description: "HeyJ is voice-first messaging. Press and hold to talk — let go to send. Works on Web, iOS, and Android, with no message length limits.",
   },
 };
 

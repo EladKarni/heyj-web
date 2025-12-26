@@ -5,18 +5,18 @@ export const navLinkList = [
     url: "/",
   },
   {
-    label: "About",
+    label: "How it Works",
     style: "default",
-    url: "#about",
+    url: "#how-it-works",
   },
   {
-    label: "Solutions",
+    label: "Features",
     style: "default",
-    url: "#solutions",
+    url: "#features",
   },
   {
-    label: "Contact",
+    label: "Get HeyJ",
     style: "default",
-    url: "#contact",
+    url: "#download",
   },
 ];

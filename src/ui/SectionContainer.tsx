@@ -6,7 +6,7 @@ type SectionContainerProps = {
   isFullWidth?: boolean;
   sectionClasses?: string;
   innerContainerClasses?: string;
-  background?: "none" | "base" | "alt" | "gradient";
+  background?: "none" | "base" | "alt" | "gradient" | "hero-gradient";
   noPadding?: boolean;
 };
 
@@ -24,6 +24,7 @@ const SectionContainer = ({
     base: "bg-base-100",
     alt: "bg-base-200",
     gradient: "bg-gradient-to-b from-base-100 to-base-200",
+    "hero-gradient": "bg-gradient-to-br from-[#FFB6A3] via-[#FF9580] to-[#FF8F76]",
   };
 
   return (
