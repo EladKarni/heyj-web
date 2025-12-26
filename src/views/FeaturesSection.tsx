@@ -92,15 +92,21 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
 
         {/* Image */}
         <div className={imagePosition === "left" ? "lg:order-1" : ""}>
-          <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden flex items-center justify-center">
+          <div className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
+            {/* Phone Image */}
             <Image
               src={image}
               alt={imageAlt}
-              width={300}
+              width={400}
               height={600}
-              className="object-contain drop-shadow-2xl"
+              className="object-contain drop-shadow-2xl relative z-10"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
+
+            {/* Bottom fade to hide cut off */}
+            <div className="absolute bottom-0 left-0 right-0 h-48 z-20 pointer-events-none">
+              <div className="absolute inset-0 bg-gradient-to-t from-base-200 from-0% via-base-200/70 via-50% to-transparent to-100%" />
+            </div>
           </div>
         </div>
       </div>

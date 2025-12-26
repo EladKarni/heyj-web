@@ -45,6 +45,18 @@ const HeroSection: FC<HeroSectionProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Column - Text Content */}
         <div className="text-left">
+          {/* Logo with Text */}
+          <div className="mb-8 animate-fade-in">
+            <Image
+              src="/HeyJ-Logo-Text-x4.png"
+              alt="HeyJ"
+              width={200}
+              height={60}
+              priority
+              className="object-contain"
+            />
+          </div>
+
           {subtitle && (
             <p className="text-primary-content/80 font-semibold text-sm md:text-base uppercase tracking-wider mb-4 animate-fade-in">
               {subtitle}
@@ -64,12 +76,22 @@ const HeroSection: FC<HeroSectionProps> = ({
           {(primaryCTA || secondaryCTA) && (
             <div className="flex flex-col sm:flex-row gap-4 items-start animate-fade-in-up animation-delay-400">
               {primaryCTA && (
-                <CTAButton href={primaryCTA.href} size="lg" variant="primary">
+                <CTAButton
+                  href={primaryCTA.href}
+                  size="lg"
+                  variant="primary"
+                  className="bg-white text-primary hover:bg-base-100 shadow-lg hover:shadow-xl"
+                >
                   {primaryCTA.text}
                 </CTAButton>
               )}
               {secondaryCTA && (
-                <CTAButton href={secondaryCTA.href} size="lg" variant="ghost" className="border-primary-content text-primary-content hover:bg-white hover:text-primary border-2">
+                <CTAButton
+                  href={secondaryCTA.href}
+                  size="lg"
+                  variant="ghost"
+                  className="border-2 border-white text-white hover:bg-white hover:text-primary"
+                >
                   {secondaryCTA.text}
                 </CTAButton>
               )}

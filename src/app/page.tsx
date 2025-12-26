@@ -39,7 +39,7 @@ export default function Home() {
           text: "Watch a 10-second demo →",
           href: "/demo",
         }}
-        image="/hero-bg.png"
+        image="/Features-Screenshot.png"
       />
 
       {/* Use Cases Section */}
