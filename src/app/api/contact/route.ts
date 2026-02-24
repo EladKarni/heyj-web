@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
 
     // Send email using Resend
     const data = await resend.emails.send({
-      from: "HeyJ Contact Form HeyJ", // You'll need to update this with your verified domain
+      from: "HeyJ Contact Form <noreply@eladkarni.com>",
       to: [process.env.CONTACT_EMAIL || "your-email@example.com"], // Your email address
       replyTo: email,
       subject: `[HeyJ Contact] ${subject} - from ${name}`,
